@@ -24,7 +24,9 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
+.navBarLink {
+  text-decoration: none;
+}
 .navBarButton {
   display: flex;
   flex-direction: row;
@@ -37,9 +39,9 @@ body {
 .navBarButton:hover {
   cursor: pointer;
 }
-
 .navBarButton:hover .navBarText {
   color: #fff;
+  text-decoration: none;
 }
 
 .navBarText {
@@ -49,7 +51,8 @@ body {
 }
 
 .periBanner {
-  padding-top: 10vh;
+  margin: 0;
+  padding: 15vh 0 0 0;
   width: 100%;
   height: 40vh;
   display: flex;
@@ -74,16 +77,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: -10vh;
 }
 
 .mainGreeting {
-  margin-top: -6vh;
-  margin-bottom: 5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 80px;
   color: #ddd;
+  margin: 6vh 0 3vh 0;
 }
 
 .greetingDisclaimer {
@@ -111,4 +112,65 @@ body {
 
 .fadesIn {
   animation: fadeIn 4s;
+}
+
+.introduction {
+  margin: 0;
+  padding: 0;
+  height: 45vh;
+  width: '100%';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introMessage {
+  margin-top: -3vh;
+  color: #eee;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+.skillBlocksDiv {
+  margin-top: -2vh;
+  width: 80%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skillBlock {
+  height: 28vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-grey);
+}
+.blockA {
+  border: 3px solid #34e1f7;
+}
+.blockB {
+  border: 3px solid #34f7ac;
+}
+.blockC {
+  border: 3px solid #f73499;
+}
+.skillBlock h4 {
+  color: #ddd;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.skillBlock ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.skillBlock li {
+  color: #ddd;
+  list-style: none;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
 }

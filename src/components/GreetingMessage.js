@@ -13,7 +13,7 @@ const GreetingMessage = () => {
     return (
         <div className='greetingMessage fadeIn'>
             <p className='mainGreeting' id='name'>Greetings, {name}</p>
-            <p className='greetingDisclaimer fadesIn'>That was a guess, but if your name is {name} that was pretty cool, right?</p>
+            <p className='greetingDisclaimer fadesIn'>That was a guess, but if your name is {name.substring(0, name.length - 1)} that was pretty cool, right?</p>
         </div>
     )
 }
