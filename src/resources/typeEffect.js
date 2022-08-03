@@ -1,7 +1,7 @@
 import getRandomName from "./names";
 
 const typeEffect = (setName) => {
-    let randomName = getRandomName();
+    let randomName = getRandomName() + '!';
     let output = '';
     for (let i = 0; i < randomName.length; i++) {
         let j = i;

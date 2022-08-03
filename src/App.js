@@ -1,13 +1,13 @@
 import './App.css';
 
 // Components
-import GreetingMessage from './components/GreetingMessage';
+import GreetingBanner from './components/GreetingMessage';
 
 function App() {
   return (
     <div>
       <section>
-        <GreetingMessage />
+        <GreetingBanner />
       </section>
     </div>
   );

@@ -9,7 +9,7 @@ const GreetingMessage = () => {
     useEffect(() => {
         typeEffect(setName);
     }, [])
-    
+
     return (
         <div className='greetingMessage fadeIn'>
             <p className='mainGreeting' id='name'>Greetings, {name}</p>
@@ -18,4 +18,14 @@ const GreetingMessage = () => {
     )
 }
 
-export default GreetingMessage;
+const GreetingBanner = () => {
+    return (
+        <div className='periBanner'>
+            <div className='banner'>
+                <GreetingMessage />
+            </div>
+        </div>
+    );
+}
+
+export default GreetingBanner;
