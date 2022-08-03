@@ -11,12 +11,20 @@ const SamplesContent = () => {
                 <h2>Free Samples</h2>
             </div>
             <div className='sampleBlocksDiv'>
-                <ProgressMeter />
-                <div className='sampleBlock searchBarBlock'>
-
+                <div className='projectBlock'>
+                    <ProgressMeter />
                 </div>
-                <div className='sampleBlock calendarBlock'>
+                <div className='projectBlock'>
+                    <h5>Search Bar</h5>
+                    <div className='sampleBlock searchBarBlock'>
 
+                    </div>
+                </div>
+                <div className='projectBlock'>
+                    <h5>Calendar</h5>
+                    <div className='sampleBlock calendarBlock'>
+
+                    </div>
                 </div>
             </div>
             <p>All Made with React.js</p>
