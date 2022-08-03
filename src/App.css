@@ -11,6 +11,7 @@ body {
   margin: 0;
 }
 
+/* Large+ Screens, Greetings Section */
 .navBar {
   padding-left: 2.5%;
   padding-right: 2.5%;
@@ -94,6 +95,7 @@ body {
   font-style: italic;
   font-size: 32px;
   color: #ddd;
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -173,4 +175,10 @@ body {
   font-size: 18px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+/* Large+ Screens, Background Section */
+
+#backgroundSection {
+  height: 1000px;
 }

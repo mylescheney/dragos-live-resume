@@ -14,10 +14,10 @@ const NavBarButton = ({ title, section }) => {
 const NavBar = () => {
     return (
         <div className='navBar'>
-            <NavBarButton title='Greetings' section='' />
-            <NavBarButton title='My Background' section='backgroundSection' />
-            <NavBarButton title='Questions, Probably' section='questionsSection' />
-            <NavBarButton title='Samples' section='samplesSection' />
+            <NavBarButton title='Greetings' section='introduction' />
+            <NavBarButton title='My Background' section='background' />
+            <NavBarButton title='Questions, Probably' section='questions' />
+            <NavBarButton title='Samples' section='samples' />
         </div>
     )
 }

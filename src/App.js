@@ -9,9 +9,14 @@ function App() {
   return (
     <div>
       <NavBar />
-      <section id="#" >
+      <section id="introduction" >
         <GreetingBanner />
         <Introduction />
+      </section>
+      <section>
+        <div id="background">
+          <h2>My Background</h2>
+        </div>
       </section>
     </div>
   );
