@@ -5,6 +5,7 @@
   --dark-grey: #102021;
 
   background-color: var(--medium-grey);
+  scroll-padding-top: 15vh;
 }
 
 body {
@@ -180,9 +181,7 @@ body {
 /* Large+ Screens, Background Section */
 
 #background {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 5vh;
 }
 .backgroundContent {
   display: flex;
@@ -205,7 +204,7 @@ body {
   color: #eee;
 }
 .backgroundBlocksDiv {
-  padding: 5vh 0 0 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -215,11 +214,37 @@ body {
   background-color: var(--dark-grey);
   border-width: 3px;
   border-style: solid;
-  margin-bottom: 5vh;
+  margin-top: 5vh;
   padding: 6px 2%;
 }
 .backgroundBlock p {
   color: #ddd;
   font-size: 18px;
   font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+/* Large+ Screens, Samples Section */
+
+#samples {
+  margin-top: 5vh;
+}
+.samplesContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.samplesHeader {
+  width: 90%;
+  background-color: var(--dark-grey);
+  border: 2px solid var(--main-purple);
+}
+.samplesHeader h2 {
+  padding: 12px 0 12px 0;
+  margin: 0;
+  font-size: 68px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #eee;
 }

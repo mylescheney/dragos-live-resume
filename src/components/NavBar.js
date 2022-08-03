@@ -15,8 +15,7 @@ const NavBar = () => {
     return (
         <div className='navBar'>
             <NavBarButton title='Greetings' section='introduction' />
-            <NavBarButton title='My Background' section='background' />
-            <NavBarButton title='Questions, Probably' section='questions' />
+            <NavBarButton title='Background' section='background' />
             <NavBarButton title='Samples' section='samples' />
         </div>
     )

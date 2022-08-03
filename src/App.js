@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import GreetingBanner from './components/GreetingMessage';
 import Introduction from './components/Introduction';
 import BackgroundContent from './components/BackgroundContent';
+import SamplesContent from './components/SamplesContent';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       </section>
       <section id="background">
         <BackgroundContent />
+      </section>
+      <section id="samples">
+        <SamplesContent />
       </section>
     </div>
   );
