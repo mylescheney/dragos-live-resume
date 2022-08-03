@@ -179,6 +179,22 @@ body {
 
 /* Large+ Screens, Background Section */
 
-#backgroundSection {
-  height: 1000px;
+#background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backgroundHeader {
+  width: 90%;
+  background-color: var(--dark-grey);
+  border: 2px solid var(--main-purple);
+}
+.backgroundHeader h2 {
+  padding: 12px 0 12px 0;
+  margin: 0;
+  font-size: 68px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #eee;
 }
