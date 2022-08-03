@@ -184,6 +184,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.backgroundContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 .backgroundHeader {
   width: 90%;
   background-color: var(--dark-grey);
@@ -197,4 +203,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #eee;
+}
+.backgroundBlocksDiv {
+  padding: 5vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.backgroundBlock {
+  width: 75%;
+  background-color: var(--dark-grey);
+  border-width: 3px;
+  border-style: solid;
+  margin-bottom: 5vh;
+  padding: 6px 2%;
+}
+.backgroundBlock p {
+  color: #ddd;
+  font-size: 18px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
