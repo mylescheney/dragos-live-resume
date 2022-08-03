@@ -260,9 +260,72 @@ body {
   margin: 3vh 0;
   background-color: var(--dark-grey);
 }
+
+/* Large+ Screens, Progress Meter Project */
+
 .progressMeterBlock {
   border: 3px solid #34f7ac;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.progressMeterBlock h5 {
+  margin: 0 0 20px 0;
+  color: #ddd;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.progressMeterBlock h6 {
+  margin: 0 0 10px 0;
+  color: #ddd;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.progressMeter {
+  height: 60px;
+  width: 70%;
+  background-color: var(--light-grey);
+  border: 3px solid #000;
+}
+.progress {
+  height: 60px;
+}
+.colorSelector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 15px 0;
+}
+.colorButton {
+  height: 40px;
+  width: 40px;
+}
+.colorSelected {
+  border: 1.5px solid #fff;
+}
+.colorUnselected {
+  margin: 1.5px;
+  border-style: none;
+}
+.progressMeterButtonsDiv {
+  display: flex;
+  flex-direction: row;
+}
+.progressMeterButton {
+  color: #ddd;
+  font-size: 44px;
+  margin: 0 10px;
+  padding: 5px;
+}
+.progressMeterButton:hover {
+  cursor: pointer;
+}
+
+
 .searchBarBlock {
   border: 3px solid #f73499;
 }

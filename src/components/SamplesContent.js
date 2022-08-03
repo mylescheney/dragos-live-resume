@@ -1,6 +1,9 @@
 import React from 'react';
 import '../App.css';
 
+// Components
+import ProgressMeter from './ProgressMeter';
+
 const SamplesContent = () => {
     return (
         <div className='samplesContent'>
@@ -8,9 +11,7 @@ const SamplesContent = () => {
                 <h2>Free Samples</h2>
             </div>
             <div className='sampleBlocksDiv'>
-                <div className='sampleBlock progressMeterBlock'>
-
-                </div>
+                <ProgressMeter />
                 <div className='sampleBlock searchBarBlock'>
 
                 </div>
