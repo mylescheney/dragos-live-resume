@@ -1,9 +1,14 @@
 import './App.css';
 
+// Components
+import GreetingMessage from './components/GreetingMessage';
+
 function App() {
   return (
     <div>
-      <h1>Welcome</h1>
+      <section>
+        <GreetingMessage />
+      </section>
     </div>
   );
 }

@@ -1,2 +1,2 @@
-Live resume, specifically for the internship opportunity I have with Dragos, Inc.
+Live resume, specifically for the software engineer internship with Dragos, Inc.
 
