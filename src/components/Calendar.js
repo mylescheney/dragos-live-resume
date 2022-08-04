@@ -66,7 +66,39 @@ const Calendar = () => {
         <div className='projectDiv'>
             <h5>Calendar</h5>
             <div className='sampleBlock calendarBlock'>
-                <h6 className='monthAndYear'>{monthName}, {year}</h6>
+                <div className='calendarNav'>
+                    <div
+                        className='calNavBtn'
+                        onClick={() => {
+                            if (month - 1 < 0) {
+                                setMonth(11);
+                                setMonthName(getMonthName(11));
+                                setYear(year - 1);
+                            } else {
+                                setMonth(month - 1);
+                                setMonthName((getMonthName(month - 1)));
+                            }
+                        }}
+                    >
+                        &lt;
+                    </div>
+                    <h6 className='monthAndYear'>{monthName}, {year}</h6>
+                    <div
+                        className='calNavBtn'
+                        onClick={() => {
+                            if (month + 1 > 11) {
+                                setMonth(0);
+                                setMonthName(getMonthName(0));
+                                setYear(year + 1);
+                            } else {
+                                setMonth(month + 1);
+                                setMonthName((getMonthName(month + 1)));
+                            }
+                        }}
+                    >
+                        &gt;
+                    </div>
+                </div>
                 <div className='weekDaysRow'>
                     <div className='weekDay'>S</div>
                     <div className='weekDay'>M</div>

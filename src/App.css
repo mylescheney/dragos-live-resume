@@ -579,11 +579,29 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .calendarNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 12%;
+  }
+  .calNavBtn {
+    font-size: 24px;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  .calNavBtn:hover {
+    cursor: pointer;
+  }
   .monthAndYear {
     font-size: 24px;
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
+    align-self: flex-end;
   }
   .weekDaysRow {
       display: flex;
