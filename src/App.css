@@ -149,12 +149,20 @@ body {
   align-items: center;
 }
 
+.topSkillBlocksDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .skillBlock {
   height: 18vh;
   width: 85%;
   display: flex;
   flex-direction: column;
   background-color: var(--dark-grey);
+  margin-bottom: 5px;
 }
 
 .blockA {
@@ -246,7 +254,44 @@ body {
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
+  .topSkillBlocksDiv {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .skillBlock {
+    height: 20vh;
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .skillBlocksDiv {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .topSkillBlocksDiv {
+    width: 55vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 7.5vw;
+    gap: 0;
+  }
+  .skillBlock {
+    height: 20vh;
+    width: 25vw;
+    margin: 0;
+  }
+  .blockA {
+    margin-right: 7.5vw;
+  }
+}
+
+@media (min-width: 992px) {
   :root {
     scroll-padding-top: 15vh;
   }
@@ -293,16 +338,24 @@ body {
     font-size: 50px;
   }
 
+  .topSkillBlocksDiv {
+    width: 52vw;
+    justify-content: flex-start;
+    margin-right: 4vw;
+  }
+  .blockA {
+    margin-right: 4vw;;
+  }
   .skillBlocksDiv {
     margin-top: -2vh;
     width: 80%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .skillBlock {
     height: 28vh;
-    width: 30%;
+    width: 24vw;
   }
 
   .skillBlock h4 {
