@@ -14,6 +14,8 @@ const SearchBar = () => {
                 className='resultBlock'
                 onClick={() => {
                     setSelected(country);
+                    updateInput('');
+                    setResults([]);
                 }}
             >
                 {country[0]}
@@ -25,11 +27,14 @@ const SearchBar = () => {
         <div className='projectDiv'>
             <h5>Search Bar</h5>
             <div className='sampleBlock searchBarBlock'>
+                <p className='countryData'>Search a country to find out its continent</p>
                 <input
                     className='searchBar'
                     type='text'
+                    value={input}
                     onChange={e => {
                         const val = e.target.value;
+                        updateInput(val);
                         if (val.length > 0) {
                             let countries = countryList.filter(country => {
                                 return country[0].toLowerCase().substring(0, val.length) === val;
@@ -43,9 +48,7 @@ const SearchBar = () => {
                 <div className='resultsDiv'>
                     {searchResults}
                 </div>
-                    {!selected.length && <p className='countryData'>Select a country to find out its continent</p>}
-                    {selected.length && <p className='countryData'>{selected[0]} is located in {selected[1]}</p>}
-            
+                {selected.length && <p className='countryData'>{selected[0]} is located in {selected[1]}</p>}
             </div>
         </div>
     );
