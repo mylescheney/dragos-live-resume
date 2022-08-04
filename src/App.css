@@ -453,6 +453,13 @@ body {
     background-color: var(--dark-grey);
   }
 
+  .samplesContent p {
+    margin: 0 0 2vh 0;
+    color: #eee;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
   /* Progress Meter Project */
 
   .progressMeterBlock {
@@ -528,20 +535,44 @@ body {
     cursor: pointer;
   }
 
+  /* Search Bar Project */
 
   .searchBarBlock {
     border: 3px solid #f73499;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .searchBar {
+    padding: 3px 5px;
+    width: 90%;
+  }
+
+  .resultsDiv {
+    height: 30%;
+    width: 90%;
+    overflow-y: auto;
+  }
+  .resultBlock {
+    height: 33%;
+    width: 100%;
+    color: #ddd;
+  }
+  .resultBlock:hover {
+    cursor: pointer;
+  }
+  .countryData {
+    font-size: 14px;
+  }
+  p.countryData {
+    font-size: 14px;
+  }
+
+  /* Calendar Project */
 
   .calendarBlock {
     border: 3px solid #f7ed34;
-  }
-
-  .samplesContent p {
-    margin: 0 0 2vh 0;
-    color: #eee;
-    font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
   }
 
 }

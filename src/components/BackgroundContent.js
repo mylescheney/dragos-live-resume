@@ -12,7 +12,6 @@ const BackgroundBlock = ({ content, borderColor, marginLeft }) => {
 
 const BackgroundContent = () => {
     let width = window.innerWidth;
-    console.log(width);
     return (
         <div className='backgroundContent'>
             <div className='backgroundHeader'>

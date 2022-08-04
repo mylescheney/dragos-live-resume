@@ -3,6 +3,7 @@ import '../App.css';
 
 // Components
 import ProgressMeter from './ProgressMeter';
+import SearchBar from './SearchBar';
 
 const SamplesContent = () => {
     return (
@@ -15,10 +16,7 @@ const SamplesContent = () => {
                     <ProgressMeter />
                 </div>
                 <div className='projectBlock'>
-                    <h5>Search Bar</h5>
-                    <div className='sampleBlock searchBarBlock'>
-
-                    </div>
+                    <SearchBar />
                 </div>
                 <div className='projectBlock'>
                     <h5>Calendar</h5>
