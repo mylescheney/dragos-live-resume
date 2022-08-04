@@ -4,6 +4,7 @@ import '../App.css';
 // Components
 import ProgressMeter from './ProgressMeter';
 import SearchBar from './SearchBar';
+import Calendar from './Calendar';
 
 const SamplesContent = () => {
     return (
@@ -19,10 +20,7 @@ const SamplesContent = () => {
                     <SearchBar />
                 </div>
                 <div className='projectBlock'>
-                    <h5>Calendar</h5>
-                    <div className='sampleBlock calendarBlock'>
-
-                    </div>
+                    <Calendar />
                 </div>
             </div>
             <p>All Made with React.js</p>
