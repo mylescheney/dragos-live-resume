@@ -227,22 +227,23 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
 }
 
 .backgroundBlock {
-  width: 75%;
+  width: 85%;
   background-color: var(--dark-grey);
   border-width: 3px;
   border-style: solid;
-  margin-top: 5vh;
+  margin-top: 2vh;
   padding: 6px 2%;
 }
 
 .backgroundBlock p {
   color: #ddd;
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Kdam Thmor Pro', sans-serif;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -330,25 +331,16 @@ body {
   }
 
   .backgroundBlocksDiv {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
     width: 90%;
   }
 
   .backgroundBlock {
     width: 75%;
-    background-color: var(--dark-grey);
-    border-width: 3px;
-    border-style: solid;
     margin-top: 5vh;
-    padding: 6px 2%;
   }
 
   .backgroundBlock p {
-    color: #ddd;
     font-size: 18px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
   }
 
   /* Samples Section */
