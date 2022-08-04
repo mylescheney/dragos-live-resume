@@ -585,6 +585,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
   }
+  .weekDaysRow {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      height: 8%;
+      margin-bottom: 0;
+  }
+  .weekDay {
+    height: 100%;
+    width: 14.3%;
+    color: #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+  }
   .grid {
     height: 48%;
     width: 70%;
