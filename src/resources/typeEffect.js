@@ -1,13 +1,11 @@
-import getRandomName from "./names";
-
-const typeEffect = (setName) => {
-    let randomName = getRandomName() + '!';
+const typeEffect = (name, setNameSpelled) => {
+    let nameScreamed = name + '!';
     let output = '';
-    for (let i = 0; i < randomName.length; i++) {
+    for (let i = 0; i < nameScreamed.length; i++) {
         setTimeout(function () {
-            output += randomName[i];
-            setName(output);
-        }, 100 * (i + 1));
+            output += nameScreamed[i];
+            setNameSpelled(output);
+        }, 120 * (i + 1));
     }
 }
 

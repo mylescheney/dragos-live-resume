@@ -16,11 +16,9 @@ body {
 ::-webkit-scrollbar {
   width: 14px;
 }
-
 ::-webkit-scrollbar-track {
   background: #969696;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #34e1f7;
 
@@ -39,6 +37,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  border-bottom: 2px solid #34e1f7;
 }
 
 .navBarLink {
@@ -267,6 +266,273 @@ body {
   font-family: 'Kdam Thmor Pro', sans-serif;
   text-align: center;
 }
+
+  /* Samples Section */
+
+  #samples {
+    margin-top: 3vh;
+  }
+
+  .samplesContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .samplesHeader {
+    width: 90%;
+    background-color: var(--dark-grey);
+    border: 2px solid var(--main-purple);
+  }
+
+  .samplesHeader h2 {
+    padding: 10px 5px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #eee;
+  }
+
+  .sampleBlocksDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projectBlock {
+    width: 85%;
+  }
+
+  .projectBlock h5 {
+    color: #ddd;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 600;
+    margin: 3vh 0;
+    letter-spacing: .1em;
+    text-align: center;
+  }
+
+  .sampleBlock {
+    width: 100%;
+    height: 50vh;
+    margin: 0 0 3vh 0;
+    background-color: var(--dark-grey);
+  }
+
+  .samplesContent p {
+    margin: 0 0 2vh 0;
+    color: #eee;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+  /* Progress Meter Project */
+
+  .progressMeterBlock {
+    border: 3px solid #34f7ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progressMeterBlock h5 {
+    margin: 0 0 20px 0;
+    color: #ddd;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .progressMeterBlock h6 {
+    margin: 0 0 10px 0;
+    color: #ddd;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .progressMeter {
+    height: 60px;
+    width: 70%;
+    background-color: var(--light-grey);
+    border: 3px solid #000;
+  }
+
+  .progress {
+    height: 60px;
+  }
+
+  .colorSelector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 15px 0;
+  }
+
+  .colorButton {
+    height: 40px;
+    width: 40px;
+  }
+
+  .colorSelected {
+    border: 1.5px solid #fff;
+  }
+
+  .colorUnselected {
+    margin: 1.5px;
+    border-style: none;
+  }
+
+  .progressMeterButtonsDiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .progressMeterButton {
+    color: #ddd;
+    font-size: 44px;
+    margin: 0 10px;
+    padding: 5px;
+  }
+
+  .progressMeterButton:hover {
+    cursor: pointer;
+  }
+
+  /* Search Bar Project */
+
+  .searchBarBlock {
+    border: 3px solid #f73499;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .searchBar {
+    padding: 8px 12px;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+  }
+
+  .resultsDiv {
+    height: 30%;
+    width: 86%;
+    overflow-y: auto;
+    border: 3px solid #f73499;
+  }
+  .resultBlock {
+    height: 33%;
+    width: 80%;
+    margin: 4px 16px;
+    color: #ddd;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+  .resultBlock:hover {
+    cursor: pointer;
+  }
+  p.countryData {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 15px 8px;
+  }
+
+  /* Calendar Project */
+
+  .calendarBlock {
+    border: 3px solid #f7ed34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendarNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 12%;
+  }
+  .calNavBtn {
+    font-size: 24px;
+    color: #f7ed34;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  .calNavBtn:hover {
+    cursor: pointer;
+  }
+  .monthAndYear {
+    font-size: 24px;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    align-self: flex-end;
+    text-align: center;
+  }
+  .weekDaysRow {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      height: 8%;
+      margin-bottom: 0;
+  }
+  .weekDay {
+    height: 100%;
+    width: 14.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .yellow {
+    color: #f7ed34;
+  }
+  .blue {
+    color: #34e1f7;
+  }
+  .green {
+    color:#34f7ac;
+  }
+  .hotPink {
+    color: #f73499;
+  }
+  .grid {
+    height: 48%;
+    width: 70%;
+  }
+  .weekRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 16.6%;
+    border: 1px solid white;
+  }
+  .dayBlock {
+    height: 100%;
+    width: 14.3%;
+    border: 1px solid #ddd;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
 .hidden {
   visibility: hidden;
@@ -678,6 +944,5 @@ body {
     justify-content: center;
     align-items: center;
   }
-
 }
 
