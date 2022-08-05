@@ -13,6 +13,19 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #969696;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34e1f7;
+
+}
+
 /* Greetings Section */
 .navBar {
   padding-left: 2.5%;
@@ -253,6 +266,10 @@ body {
   font-size: 14px;
   font-family: 'Kdam Thmor Pro', sans-serif;
   text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 @media (min-width: 576px) {
@@ -542,32 +559,40 @@ body {
     border: 3px solid #f73499;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .searchBar {
-    padding: 3px 5px;
-    width: 90%;
+    padding: 8px 12px;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
   }
 
   .resultsDiv {
     height: 30%;
-    width: 90%;
+    width: 86%;
     overflow-y: auto;
+    border: 3px solid #f73499;
   }
   .resultBlock {
     height: 33%;
-    width: 100%;
+    width: 80%;
+    margin: 4px 16px;
     color: #ddd;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
   }
   .resultBlock:hover {
     cursor: pointer;
   }
-  .countryData {
-    font-size: 14px;
-  }
   p.countryData {
-    font-size: 14px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 15px 8px;
   }
 
   /* Calendar Project */
@@ -589,7 +614,7 @@ body {
   }
   .calNavBtn {
     font-size: 24px;
-    color: #ddd;
+    color: #f7ed34;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
   }
@@ -613,11 +638,23 @@ body {
   .weekDay {
     height: 100%;
     width: 14.3%;
-    color: #ddd;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .yellow {
+    color: #f7ed34;
+  }
+  .blue {
+    color: #34e1f7;
+  }
+  .green {
+    color:#34f7ac;
+  }
+  .hotPink {
+    color: #f73499;
   }
   .grid {
     height: 48%;
@@ -635,9 +672,12 @@ body {
     width: 14.3%;
     border: 1px solid #ddd;
     color: #ddd;
-  }
-  .hidden {
-    display: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
 }
+

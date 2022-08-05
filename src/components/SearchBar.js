@@ -27,7 +27,6 @@ const SearchBar = () => {
         <div className='projectDiv'>
             <h5>Search Bar</h5>
             <div className='sampleBlock searchBarBlock'>
-                <p className='countryData'>Search a country to find out its continent</p>
                 <input
                     className='searchBar'
                     type='text'
@@ -44,11 +43,13 @@ const SearchBar = () => {
                             setResults([]);
                         }
                     }}
+                    onFocus={() => setSelected([])}
+                    placeholder='Search a country'
                 />
-                <div className='resultsDiv'>
+                <div className={input.length ? 'resultsDiv' : 'hidden'}>
                     {searchResults}
                 </div>
-                {selected.length && <p className='countryData'>{selected[0]} is located in {selected[1]}</p>}
+                <p className={selected.length ? 'countryData' : 'hidden'}>{selected[0]} is located in {selected[1]}</p>
             </div>
         </div>
     );

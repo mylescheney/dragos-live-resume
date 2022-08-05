@@ -100,13 +100,13 @@ const Calendar = () => {
                     </div>
                 </div>
                 <div className='weekDaysRow'>
-                    <div className='weekDay'>S</div>
-                    <div className='weekDay'>M</div>
-                    <div className='weekDay'>T</div>
-                    <div className='weekDay'>W</div>
-                    <div className='weekDay'>Th</div>
-                    <div className='weekDay'>F</div>
-                    <div className='weekDay'>S</div>
+                    <div className='weekDay blue'>S</div>
+                    <div className='weekDay green'>M</div>
+                    <div className='weekDay hotPink'>T</div>
+                    <div className='weekDay yellow'>W</div>
+                    <div className='weekDay hotPink'>Th</div>
+                    <div className='weekDay green'>F</div>
+                    <div className='weekDay blue'>S</div>
                 </div>
                 <div className='grid'>
                     <WeekRow rowNum={0} monthLength={monthLength} startDay={startDay} />
